@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: none;
+    font-family: 'Poppins';
+}
+html{
+    background-color: black; 
+}
+body{
+    height: 100vh;
+    padding: 40px;
+    max-width: 1500px;
+    margin: auto;
+}
+nav{
+    /* background: linear-gradient(180deg,aqua,rgb(53, 52, 52),aqua); */
+    background-color: rgb(37, 37, 37);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+nav h1{
+    background-color: aqua;
+    background-image: linear-gradient(to top, aqua,aqua, rgb(255, 0, 255), aqua);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+}
+main{
+    width: fit-content;
+    height: 100%;
+    width: 100%;
+}
+main p{
+color: rgb(212, 212, 212);
+margin-top: 50px;
+}
+.the-section{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.second-div h3{
+    background-color: aqua;
+    background-image: linear-gradient(to top,aqua, rgb(255, 0, 255), aqua, aqua);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1.3rem;
+}
+.projects{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    background: linear-gradient(60deg, rgb(32, 32, 32), black, rgb(44, 44, 44));
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1000;
+}
+.projects .h-6{
+color: rgb(198, 255, 255);
+font-size: 1rem;
+letter-spacing: 1px;
+}   
+a{
+    color: aqua;
+    font-size: 1.2rem;
+}
+a:hover{
+    color:  rgb(255, 0, 255) ;
+    text-decoration: none;
+}
+.name{
+    color: rgb(171, 83, 253);
+}
+.bussiness-name{
+    color: aqua;
+}
+h2{
+    color: rgb(114, 114, 114);
+    margin-top: 10px;
+    width: 300px;
+
+}
+.span{
+    color: aqua;
+}
+.the-span{
+    color: blueviolet;
+}
+.h-4{
+    color: rgb(0, 177, 177);
+    text-align: start;
+    margin: 10px;
+}
+.guide{
+    background: rgba(212, 212, 212,.2);
+    padding: 15px;
+    margin-top: 10px;
+}
+.h-4-d{
+    color: rgb(184, 184, 184);
+    text-align: start;
+    font-size: small;
+    text-align: center;
+}
+.projects p{
+color: rgb(168, 168, 168);
+margin-top: 5px;
+
+}
+.projects p span{
+    color: blueviolet;
+    display: inline-block;
+}
+h5{
+color: rgb(121, 202, 0);
+font-size: 1.3rem;
+border-bottom: 1px solid greenyellow;
+width: fit-content;
+margin-bottom: 10px;
+}
+.semi-div{
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+/* ======================================================================
+======================================================================
+======================================================================
+====================================================================== */
+
+  /* p{
+    margin-top: 8vw;
+    text-align: center;
+    font-size: 5vw;
+    color: #000000;
+  } */
+.page {
+    width: 30vw;
+    height: 44vw;
+    background-color: #111111;
+    float: left;
+    margin-bottom: 0.5em;
+    background: left top no-repeat;
+    background-size: cover;
+  }
+  .page:nth-child(even) {
+    clear: both;
+  }
+  .book {
+    perspective: 250vw;
+  }
+  .book .pages {
+    width: 60vw;
+    height: 44vw;
+    position: relative;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    border-radius: 4px;
+  }
+  .book .page {
+    float: none;
+    clear: none;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    width: 30vw;
+    height: 44vw;
+    transform-origin: 0 0;
+    transition: transform 1.4s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f0f0f0;
+  }
+  .book .page:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.7s;
+    z-index: 2;
+  }
+  .book .page:nth-child(odd) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+    right: 0;
+    border-radius: 0 4px 4px 0;
+    background-image: linear-gradient(to right, rgba(0,0,0,.15) 0%, rgba(0,0,0,0) 10%);
+  }
+  .book .page:nth-child(odd):hover {
+    transform: rotateY(-15deg);
+  }
+  .book .page:nth-child(odd):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .book .page:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0);
+  }
+  .book .page:nth-child(even) {
+    pointer-events: none;
+    transform: rotateY(180deg);
+    transform-origin: 100% 0;
+    left: 0;
+    border-radius: 4px 0 0 4px;
+    border-color: black;
+    background-image: linear-gradient(to left, rgba(0,0,0,.12) 0%, rgba(0,0,0,0) 10%);
+  }
+  .book .page:nth-child(even):before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .book .page.grabbing {
+    transition: none;
+  }
+  .book .page.flipped:nth-child(odd) {
+    pointer-events: none;
+    transform: rotateY(-180deg);
+  }
+  .book .page.flipped:nth-child(odd):before {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .book .page.flipped:nth-child(even) {
+    pointer-events: all;
+    transform: rotateY(0deg);
+  }
+  .book .page.flipped:nth-child(even):hover {
+    transform: rotateY(15deg);
+  }
+  .book .page.flipped:nth-child(even):hover:before {
+    background: rgba(0, 0, 0, 0.03);
+  }
+  .book .page.flipped:nth-child(even):before {
+    background: rgba(0, 0, 0, 0);
+  }
+  *,
+  * :before,
+  *:after {
+    box-sizing: border-box;
+  }
+  .page:nth-child(odd){
+    background-position: right top;
+  } 
+.book-h2{
+    color: gray;
+   margin: 30px auto;
+}
+.my-book .page p{
+    font-family: 'Lovers Quarrel', cursive;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4rem;
+    color: black;
+}
+/* ===============================================================================
+===============================================================================
+===============================================================================
+=============================================================================== */
+
+
+
+.dragable {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.dragging {
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+#lamp {
+  position: fixed;
+  top: -5px;
+  left: 50%;
+  margin-left: -65px;
+  width: 130px;
+  transform-origin: 65px 0; /* Standard property */
+  -webkit-transform-origin: 65px 0; /* WebKit prefix */
+  transform: rotate(0deg);
+}
+
+#lamp.swinging {
+  transition: all 0.6s ease-in-out;
+}
+
+#lamp .cable {
+  width: 6px;
+  height: 180px;
+  margin: auto;
+  background: #2e2e2e;
+}
+
+#lamp .block {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  margin-bottom: -10px;
+  background: #333;
+}
+
+#lamp .shade {
+  width: 130px;
+  height: 65px;
+  background: #333;
+  border-top-right-radius: 65px;
+  border-top-left-radius: 65px;
+}
+
+#lamp .bulb_wrapper {
+  position: absolute;
+  width: 500px;
+  height: 250px;
+  overflow: hidden;
+  margin-left: -185px;
+  z-index: -100;
+}
+
+#lamp .bulb_wrapper .bulb {
+  position: absolute;
+  z-index: -1;
+  width: 44px;
+  height: 22px;
+  margin-left: 228px;
+  background: #000000;
+  border-bottom-right-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+#lamp.off .bulb_wrapper .bulb {
+  background: #ffffff;
+  box-shadow: 0 0 200px 30px #ffffff;
+
+}
+
+#arrows {
+  position: fixed;
+  left: 50%;
+  top: 205px;
+  width: 430px;
+  margin-left: -215px;
+  opacity: 0.6;
+}
+
+#arrows .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrows .arrow.left {
+  float: left;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent #fff;
+}
+
+#arrows .arrow.right {
+  float: right;
+  border-width: 20px 30px 20px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+#info {
+  position: fixed;
+  left: 0;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+}
+.des{
+  color: rgb(219, 0, 0);
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1230px) {
+  .my-book .page p{
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .my-book .page {
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 694px) {
+  .my-book .page {
+    font-size: 0.2rem;
+  }
+}
